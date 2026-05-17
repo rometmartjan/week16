@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --primary-color: #DDF0F4;
+    --heading-color: #0C3578;
+    --label-color: #3771CE;
+    --heading-font: "Playfair Display", serif;
+    --body-font: "Roboto", sans-serif;
+    --link-fonts: "Quicksand", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--body-font);
+}
+
+.container {
+    width: 60%;
+    margin: 0 auto;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    width: 100%;
+}
+
+h2 {
+    font-family: var(--heading-font);
+    color: var(--heading-color);
+    font-weight: 900;
+    font-size: 48px;
+    padding: 1rem 0;
+}
+
+ul {
+    list-style: none;
+}
+
+.isikuandmed, .haridus, .kogemus, .lisainfo{
+    background-color: var(--primary-color);
+    margin-bottom: 3rem;
+    border-color: black;
+}
+
+.isikuandmed {
+    margin-top: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.isikuandmed-pealkiri {
+    grid-column: 1/3;
+    grid-row: 1/2;
+}
+
+.isikuandmed-nimetused {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    margin: 0 2rem;
+}
+
+.isikuandmed-andmed {
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+.foto-container {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    width: 100%;
+    height: auto;
+}
+
+.foto-foto {
+    width: 100%;
+    height: auto;
+}
+
+.foto-foto img{
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    object-position: 50% 30%;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.haridus {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.haridus-pealkiri {
+    grid-column: 1/3;
+    grid-row: 1/2;
+}
+.haridus-kooliaste {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+.haridus-andmed {
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+.kogemus {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.kogemus-pealkiri {
+    grid-column: 1/3;
+    grid-row: 1/2;
+}
+
+.kogemus-aasta {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+.kogemus-amet {
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+.isikuandmed-nimetused, .kogemus-aasta, .haridus-kooliaste {
+    color: var(--label-color);
+    font-family: var(--body-font);
+    font-size: 24px;
+    margin: 0 2rem;
+    line-height: 1.5;
+}
+
+.isikuandmed-andmed, .kogemus-amet, .haridus-andmed, .lisainfo-tekst {
+    font-family: var(--body-font);
+    font-size: 24px;
+    margin: 0 2rem;
+    line-height: 1.5;
+}
+
+@media (max-width: 480px){
+    .container {
+        width: 100%;
+    }
+
+    header {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        width: 100%;
+    }
+    .foto-container {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        width: 100%;
+        height: auto;
+    }
+    
+
+}

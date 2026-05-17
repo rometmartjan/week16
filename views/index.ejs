@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>CV</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="isikuandmed">
+                <h2 class="isikuandmed-pealkiri">Isikuandmed</h2>
+                <div class="isikuandmed-nimetused">
+                    <ul class="isikuandmed-nimetused-list">
+                        <li>Nimi:</li>
+                        <li>Sünniaeg:</li>
+                        <li>Aadress:</li>
+                        <li>E-post:</li>
+                        <li>Telefon:</li>
+                        <li>Haridus:</li>
+                    </ul>
+                </div>
+
+                <div class="isikuandmed-andmed">
+                    <ul class="isikuandmed-andmed-list">
+                        <li><%= andmed.fullName%></li>
+                        <li>31.02.1999</li>
+                        <li><%= andmed.address%></li>
+                        <li><%= andmed.email%></li>
+                        <li><%= andmed.phone%></li>
+                        <li>Magister</li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="foto-container">
+                <div class="foto-foto">
+                    <img src="images/1.jpg" alt="headshot">
+                </div>
+
+            </div>
+
+        </header>
+
+        <section class="main">
+            <div class="haridus">
+                <h2 class="haridus-pealkiri">Hariduskäik</h2>
+                <div class="haridus-kooliaste">
+                    <ul class="haridus-kooliaste-list">
+                        <li>Põhikool:</li>
+                        <li>Gümnaasium:</li>
+                        <li>Bakalaureus:</li>
+                        <li>Magister:</li>
+                    </ul>
+                </div>
+
+                <div class="haridus-andmed">
+                    <ul class="haridus-andmed-list">
+                        <li>Lustivere Põhikool (2005-2014)</li>
+                        <li>Nõo reaalgümnaasium (2014-2017)</li>
+                        <li>Tartu ülikool (2017-2020)</li>
+                        <li>Taltech (2020-2022)</li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="kogemus">
+                <h2 class="kogemus-pealkiri">Töökogemus</h2>
+                <div class="kogemus-aasta">
+                    <ul class="kogemus-aasta-list">
+                        <li>2022-2023:</li>
+                        <li>2023-2024:</li>
+                        <li>2024-2025:</li>
+                        <li>2025-2026:</li>
+                    </ul>
+                </div>
+
+                <div class="kogemus-amet">
+                    <ul class="kogemus-amet-list">
+                        <li>Mikitamäe Mööblitehas, koristaja</li>
+                        <li>Kadrioru Loss, garderoobitädi</li>
+                        <li>Superministeerium, superminister</li>
+                        <li>Vabakutseline kunstnik</li>
+                    </ul>
+                </div>
+
+            </div>
+
+
+        </section>
+
+        <footer>
+            <div class="lisainfo">
+                <h2>Lisainfo</h2>
+                <p class="lisainfo-tekst">Lorem ipsum dolor sit amet consectetur adipisicing elit. A sit, at corrupti excepturi nemo necessitatibus nam nihil soluta pariatur placeat reiciendis voluptatibus officia maxime quasi ad deserunt, unde numquam vitae ut, expedita impedit velit exercitationem non rem! Architecto, ratione voluptatibus.</p>
+
+            </div>
+
+
+        </footer>
+
+    </div>
+
+    <script src="app.js"></script>
+    <script src="profile.js"></script>
+</body>
+</html>
